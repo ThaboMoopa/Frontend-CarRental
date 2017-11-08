@@ -10,6 +10,7 @@
     <script src="js/additional/jquery-1.12.4.js"></script>
     <script src="js/additional/jquery-1.12.1.js"></script>
     <script src="js/additional/popper.min.js"></script>
+      <script src="js/additional/aes.js"></script>
     <link rel="stylesheet" href="css/navigation.css">
     <style>
         .footer{
@@ -128,6 +129,8 @@
         var email = validateEmail($("#txtEmail").val());
         var password = validatePassword($("#txtPassword").val());
 
+        var hash = CryptoJS.MD5(password);
+
         if (email == false || password == false) {
             event.preventDefault();
             //return;
@@ -146,7 +149,7 @@
                         //console.log(value.name);
                         if(email == value.name)
                         {
-                            if(password == value.password)
+                            if(hash == value.password)
                             {
                                 sessionStorage.setItem("userRole",value.role);
                                 homepage();

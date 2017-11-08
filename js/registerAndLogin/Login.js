@@ -4,6 +4,8 @@ $(document).ready(function() {
     //load data to the user table
     var name = "admin@vehicleRental.com";
     var email = '';
+
+    var hash = CryptoJS.MD5("admin123");
     $.ajax({
         type: "GET",
         dataType: "json",
@@ -26,7 +28,7 @@ $(document).ready(function() {
             type: "POST",
             dataType: "json",
             url: URLlink + "/user/addUser?",
-            data: "name=admin@vehicleRental.com&surname=admin&password=admin123&role=admin",
+            data: "name=admin@vehicleRental.com&surname=admin&password="+hash+"&role=admin",
             async: false,
             success: function (response) {
                 console.log("added new");

@@ -194,7 +194,10 @@ function validate() {
     var role = "user";
     var confirmPassword = validatePassword($("#txtConfirm").val());
     var comparePassword = comparePasswordValid(password,confirmPassword);
-    var registerData = "name="+name+"&surname="+surname+"&password="+password+"&role="+role;
+
+    var hash = CryptoJS.MD5(password);
+
+    var registerData = "name="+name+"&surname="+surname+"&password="+hash+"&role="+role;
 
     if (name == false || surname == false || password == false || comparePassword == false) {
     event.preventDefault();
