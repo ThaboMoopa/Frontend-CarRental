@@ -62,7 +62,7 @@ $(document).ready(function(){
         htmlData += '<td>' + carModel[i] + '</td>';
         htmlData += '<td>' + carYear[i] + '</td>';
         htmlData += '<td>' + carPlate[i] + '</td>';
-        htmlData += '<td>' + rentTotalAmount[i] + '</td>';
+        htmlData += '<td>R ' + rentTotalAmount[i] + '</td>';
         htmlData += '<td><a href="" class="btn btn-outline-warning" data-value="'+rentID[i]+'" id="returnCar">Return a car</a></td>';
         htmlData += '</tr>';
         $("#table tbody").append(htmlData);
@@ -248,7 +248,7 @@ $(document).ready(function(){
             htmlData += '<td>' + carModel[i] + '</td>';
             htmlData += '<td>' + carYear[i] + '</td>';
             htmlData += '<td>' + carPlate[i] + '</td>';
-            htmlData += '<td>' + rentTotalAmount[i] + '</td>';
+            htmlData += '<td>R ' + rentTotalAmount[i] + '</td>';
             htmlData += '<td><a href="" class="btn btn-outline-warning" data-value="'+rentID[i]+'" id="returnCar">Return a car</a></td>';
             htmlData += '</tr>';
             $("#table tbody").append(htmlData);
@@ -450,7 +450,7 @@ $(document).ready(function(){
             htmlData += '<td>' + carModel[i] + '</td>';
             htmlData += '<td>' + carYear[i] + '</td>';
             htmlData += '<td>' + carPlate[i] + '</td>';
-            htmlData += '<td>' + rentTotalAmount[i] + '</td>';
+            htmlData += '<td>R ' + rentTotalAmount[i] + '</td>';
             htmlData += '<td><a href="" class="btn btn-outline-warning" data-value="'+rentID[i]+'" id="returnCar">Return a car</a></td>';
             htmlData += '</tr>';
             $("#table tbody").append(htmlData);

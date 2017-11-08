@@ -62,7 +62,7 @@ var carPlate = [];
         htmlData += '<td>' + carModel[i] + '</td>';
         htmlData += '<td>' + carYear[i] + '</td>';
         htmlData += '<td>' + carPlate[i] + '</td>';
-        htmlData += '<td>' + rentTotalAmount[i] + '</td>';
+        htmlData += '<td>R ' + rentTotalAmount[i] + '</td>';
         htmlData += '</tr>';
         $("#table tbody").append(htmlData);
     }
@@ -128,7 +128,6 @@ $(document).ready(function(){
 
         if(email == false)
         {
-            alert("email is wrong");
         }
         else
         {
@@ -179,7 +178,7 @@ $(document).ready(function(){
             htmlData += '<td>' + carModel[i] + '</td>';
             htmlData += '<td>' + carYear[i] + '</td>';
             htmlData += '<td>' + carPlate[i] + '</td>';
-            htmlData += '<td>' + rentTotalAmount[i] + '</td>';
+            htmlData += '<td>R ' + rentTotalAmount[i] + '</td>';
             htmlData += '</tr>';
             $("#table tbody").append(htmlData);
         }
@@ -381,7 +380,7 @@ $(document).ready(function(){
             htmlData += '<td>' + carModel[i] + '</td>';
             htmlData += '<td>' + carYear[i] + '</td>';
             htmlData += '<td>' + carPlate[i] + '</td>';
-            htmlData += '<td>' + rentTotalAmount[i] + '</td>';
+            htmlData += '<td>R ' + rentTotalAmount[i] + '</td>';
             htmlData += '</tr>';
             $("#table tbody").append(htmlData);
         }
